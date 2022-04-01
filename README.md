@@ -1,4 +1,4 @@
-![Bienvenido a Big Data](https://github.com/amarufd/BigData2022s1/big-data-definition.jpeg)
+![Bienvenido a Big Data](https://github.com/amarufd/BigData2022s1/blob/main/big-data-definition.jpeg)
 
 # BigData2022s1
 
