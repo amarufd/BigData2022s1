@@ -29,6 +29,24 @@
                 background-color: cadetblue;
                 color: brown;
             }
+            .titulo-unidad{
+                font-size: 30px;
+                text-align: center;
+                background-color: blue;
+                color: deeppink;
+            }
+            .contenido-unidad{
+                color: black;
+            }
+
+            /* Editando Id */
+            #titulo-div{
+                color: chartreuse;
+            }
+
+            #titulo-img{
+                color: yellow;
+            }
         </style>
     </head>
     <body>
@@ -41,60 +59,68 @@
                     <p>Viendo las nociones básicas del html</p>
                 </div>
                 <div class="unidad">
-                    <h3>Link (a)</h3>
-                    <p>Como hacer un link &#60;a href="http://www.carolina.cl"&#62;ir a radio carolina&#60;/a&#62;</p>
-                    <a href="http://www.carolina.cl">ir a radio carolina</a>
+                    <h3 class="titulo-unidad">Link (a)</h3>
+                    <div class="contenido-unidad">
+                        <p>Como hacer un link &#60;a href="http://www.carolina.cl"&#62;ir a radio carolina&#60;/a&#62;</p>
+                        <a href="http://www.carolina.cl">ir a radio carolina</a>
+                    </div>
                 </div>
                 <div class="unidad">
-                    <h3>div</h3>
-                    <p>Como hacer un div &#60;div&#62;contenido&#60;/div&#62;</p>
-                    <img src="assert/img/divs.png" width="200px" />
+                    <h3 class="titulo-unidad" id="titulo-div">div</h3>
+                    <div class="contenido-unidad">
+                        <p>Como hacer un div &#60;div&#62;contenido&#60;/div&#62;</p>
+                        <img src="assert/img/divs.png" width="200px" />
+                    </div>
                 </div>
                 <div class="unidad">
-                    <h3>imagen (img)</h3>
-                    <p>Como poner una imagen &#60;img src="path/nombre_imagen.png" /&#62;</p>
-                    <img src="assert/img/The-Matrix.jpg" width="400px" />
+                    <h3 class="titulo-unidad" id="titulo-img">imagen (img)</h3>
+                    <div class="contenido-unidad">
+                        <p>Como poner una imagen &#60;img src="path/nombre_imagen.png" /&#62;</p>
+                        <img src="assert/img/The-Matrix.jpg" width="400px" />
+                    </div>
                 </div>
                 <div class="unidad">
-                    <h3>Tabla (table)</h3>
-                    <p>Como crear una tabla<br>
-                        &#60;table&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Unidad&#60;/th&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Materia&#60;/th&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Link&#60;/th&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Unidad 1&#60;/td&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Conceptos básicos HTML&#60;/td&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;&#60;a href="#"&#62;click aqui&#60;/a&#62;&#60;/td&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Unidad 1&#60;/td&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;CSS&#60;/td&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;&#60;a href="#"&#62;click aqui&#60;/a&#62;&#60;/td&#62;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
-                        &#60;/table&#62;<br>
-                    </p>
-                    <div>
-                        <!-- creacion de una tabla -->
-                        <table>
-                            <tr>
-                                <th>Unidad</th>
-                                <th>Materia</th>
-                                <th>Link</th>
-                            </tr>
-                            <tr>
-                                <td>Unidad 1</td>
-                                <td>Conceptos básicos HTML</td>
-                                <td><a href="#">click aqui</a></td>
-                            </tr>
-                            <tr>
-                                <td>Unidad 1</td>
-                                <td>CSS</td>
-                                <td><a href="#">click aqui</a></td>
-                            </tr>
-                        </table>
+                    <h3 class="titulo-unidad">Tabla (table)</h3>
+                    <div class="contenido-unidad">
+                        <p>Como crear una tabla<br><br><br>
+                            &#60;table&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Unidad&#60;/th&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Materia&#60;/th&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Link&#60;/th&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Unidad 1&#60;/td&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Conceptos básicos HTML&#60;/td&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;&#60;a href="#"&#62;click aqui&#60;/a&#62;&#60;/td&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Unidad 1&#60;/td&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;CSS&#60;/td&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;&#60;a href="#"&#62;click aqui&#60;/a&#62;&#60;/td&#62;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                            &#60;/table&#62;<br>
+                        </p>
+                        <div>
+                            <!-- creacion de una tabla -->
+                            <table>
+                                <tr>
+                                    <th>Unidad</th>
+                                    <th>Materia</th>
+                                    <th>Link</th>
+                                </tr>
+                                <tr>
+                                    <td>Unidad 1</td>
+                                    <td>Conceptos básicos HTML</td>
+                                    <td><a href="#">click aqui</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Unidad 1</td>
+                                    <td>CSS</td>
+                                    <td><a href="#">click aqui</a></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
