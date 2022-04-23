@@ -3,49 +3,102 @@
     <head>
         <meta charset="UTF-8">
         <title>Página de Big Data</title>
+        <style>
+            
+            /* Editando tags */
+            body{
+                background-color: burlywood;
+            }
+            table,tr,th,td{
+                border: 1px solid black;
+            }
+
+            div{
+                margin: 20px;
+                padding: 10px;
+            }
+
+            /* Editando clases */
+            .titulo{
+                text-align: center;
+            }
+            .centrado{
+                text-align: center;
+            }
+            .unidad{
+                background-color: cadetblue;
+                color: brown;
+            }
+        </style>
     </head>
     <body>
         <div>
-            <h1>Big Data</h1>
+            <!-- creacion de titulo con tag h1 -->
+            <h1 class="titulo">Big Data</h1>
             <div>
-                <h2>Unidad de HTML</h2>
-                <p>Viendo las nociones básicas del html</p>
-                <div>
+                <div class="centrado">
+                    <h2>Unidad de HTML</h2>
+                    <p>Viendo las nociones básicas del html</p>
+                </div>
+                <div class="unidad">
                     <h3>Link (a)</h3>
                     <p>Como hacer un link &#60;a href="http://www.carolina.cl"&#62;ir a radio carolina&#60;/a&#62;</p>
                     <a href="http://www.carolina.cl">ir a radio carolina</a>
                 </div>
-                <div>
+                <div class="unidad">
                     <h3>div</h3>
                     <p>Como hacer un div &#60;div&#62;contenido&#60;/div&#62;</p>
                     <img src="assert/img/divs.png" width="200px" />
                 </div>
-                <div>
+                <div class="unidad">
                     <h3>imagen (img)</h3>
                     <p>Como poner una imagen &#60;img src="path/nombre_imagen.png" /&#62;</p>
                     <img src="assert/img/The-Matrix.jpg" width="400px" />
                 </div>
+                <div class="unidad">
+                    <h3>Tabla (table)</h3>
+                    <p>Como crear una tabla<br>
+                        &#60;table&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Unidad&#60;/th&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Materia&#60;/th&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;th&#62;Link&#60;/th&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Unidad 1&#60;/td&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Conceptos básicos HTML&#60;/td&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;&#60;a href="#"&#62;click aqui&#60;/a&#62;&#60;/td&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;tr&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;Unidad 1&#60;/td&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;CSS&#60;/td&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#60;td&#62;&#60;a href="#"&#62;click aqui&#60;/a&#62;&#60;/td&#62;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#60;/tr&#62;<br>
+                        &#60;/table&#62;<br>
+                    </p>
+                    <div>
+                        <!-- creacion de una tabla -->
+                        <table>
+                            <tr>
+                                <th>Unidad</th>
+                                <th>Materia</th>
+                                <th>Link</th>
+                            </tr>
+                            <tr>
+                                <td>Unidad 1</td>
+                                <td>Conceptos básicos HTML</td>
+                                <td><a href="#">click aqui</a></td>
+                            </tr>
+                            <tr>
+                                <td>Unidad 1</td>
+                                <td>CSS</td>
+                                <td><a href="#">click aqui</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
             <h6>By Amaru Fernandez</h6>
-        </div>
-        <div>
-            <table>
-                <tr>
-                    <th>Unidad</th>
-                    <th>Materia</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>Unidad 1</td>
-                    <td>Conceptos básicos HTML</td>
-                    <td><a href="#">click aqui</a></td>
-                </tr>
-                <tr>
-                    <td>Unidad 1</td>
-                    <td>CSS</td>
-                    <td><a href="#">click aqui</a></td>
-                </tr>
-            </table>
         </div>
     </body>
     </html>
